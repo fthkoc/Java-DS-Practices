@@ -63,4 +63,15 @@ public class SortTest {
         System.out.println(Arrays.toString(testInteger));
         System.out.println("\n");
     }
+
+    public static void testQuickSort() {
+        Sort sortClass = new Sort();
+        Integer[] testInteger = {9, 5, 7, 6, 2, 3, 1, 4, 8, 0};
+        System.out.println("Integer array:");
+        System.out.println(Arrays.toString(testInteger));
+        sortClass.quickSort(testInteger, 0 , testInteger.length - 1);
+        System.out.println("After quick sort:");
+        System.out.println(Arrays.toString(testInteger));
+        System.out.println("\n");
+    }
 }
